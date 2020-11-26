@@ -48,7 +48,7 @@ if __name__ == '__main__':
 	"""
 
 
-	sss.say("sound",["Firstly, make sure to wear a face covering when inside University buildings like me"], False)
+	sss.say("sound",["Firstly, make sure to wear a face covering when inside University buildings"], False)
 	handle_arm = sss.move("arm_right", [[0,-1,0.9,-2.1,1,0,0]], False)
 	handle_arm = sss.move("arm_left", [[0,1,-0.9,2.1,-1,0,0]])
 
@@ -66,12 +66,13 @@ if __name__ == '__main__':
 	"""
 
 
-	sss.say("sound", ["Adhere to social distancing guidelines and stay two metres away from others where possible. You must also follow the signs around campus, including following the one way system."], False)
+	sss.say("sound", ["Adhere to social distancing guidelines and stay two metres away from others where possible."], False)
 	handle_arm = sss.move("arm_right", "home", False)
 	handle_arm = sss.move("arm_left", "home")
 	sss.move("torso", [[0,0.3]])
 	sss.move("torso", [[0,-0.3]])
 	sss.move("torso", "home")
+	sss.say("sound", ["You must also follow the signs around campus, including following the one way system."], False)
 	# handle_arm = sss.move("arm_right", [[2.4, 1.4, -1.0472, 0, -1.0472, -0.6981, 1.0700]], False)
 	# handle_arm = sss.move("arm_left", [[-2.4, -1.4, 1.0472, 0, 1.0472, 0.6981, -1.0700]])
 	for i in range(3):
