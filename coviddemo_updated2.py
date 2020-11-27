@@ -39,9 +39,11 @@ if __name__ == '__main__':
 	# handle_arm = sss.move("arm_right", "hello")
 	rospy.sleep(3)
 
+	sss.say("sound", ["Firstly, adhere to social distancing guidelines and stay two metres away from others where possible."], False)
+
 	handle_arm = sss.move("arm_right", "home", False)
 	handle_arm = sss.move("arm_left", "home")
-	sss.say("sound", ["Firstly, adhere to social distancing guidelines and stay two metres away from others where possible."], False)
+	
 	sss.move("torso", [[0,0.4]])
 	sss.move("torso", [[0,-0.4]])
 	sss.move("torso", "home")
@@ -86,6 +88,9 @@ if __name__ == '__main__':
 
 	handle_arm = sss.move("arm_right", [[1.4, 1.3, -1.0472, -1.5, -1.0472, -0.6981, 1.0700]], False)
 	handle_arm = sss.move("arm_left", [[-1.4, -1.3, 1.0472, 1.5, 1.0472, 0.6981, -1.0700]])
+
+	handle_arm = sss.move("arm_right", [[1.4, 1.3, -1.0472, -1.9, -1.0472, -0.6981, 1.0700]], False)
+	handle_arm = sss.move("arm_left", [[-1.4, -1.3, 1.0472, 1.9, 1.0472, 0.6981, -1.0700]])
 
 	handle_arm = sss.move("arm_right", [[1.4, 1.3, -1.0472, -1.9, -1.0472, -0.6981, 1.0700]], False)
 	handle_arm = sss.move("arm_left", [[-1.4, -1.3, 1.0472, 1.9, 1.0472, 0.6981, -1.0700]])
