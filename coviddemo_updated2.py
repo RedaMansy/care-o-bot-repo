@@ -34,10 +34,6 @@ if __name__ == '__main__':
 	sss.move("torso", [[0,-0.75]])
 	sss.move("torso", "home")
 	handle_arm = sss.move("arm_right", "hello")
-	# rospy.sleep(10)
-	# handle_arm = sss.move("arm_left", "hello")
-
-	# rospy.sleep(1.5)
 
 	"""
 	===========================
@@ -90,7 +86,6 @@ if __name__ == '__main__':
 	"""
 	sss.say("sound",["Remember to sanitise your hands regularly using the sanitisers available around the buildings and on arrival at the campus, as well as regular 20 second hand washing"], False)
 
-######################## safest option (same height of hand, but further apart now) ############################
 	for i in range(3):
  		handle_arm = sss.move("arm_left", [[1.02, 1.5, -1.4, 1.9, -1.84, -1.12, -0.64]], False)
  		handle_arm = sss.move("arm_right", [[-1.25, -1.5, 1.4, -1.9, 1.84, 1.12, 0.64]])
@@ -113,7 +108,6 @@ if __name__ == '__main__':
 	handle_arm = sss.move("arm_left", "folded")
 
 	sss.say("sound",["Thank you for your co operation"], False)
-	# sss.set_mimic("mimic", "blinkingRight")
 	
 	sss.move("torso", [[-0.3,0.2]])
 	sss.move("torso", "front")
