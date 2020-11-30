@@ -25,7 +25,7 @@ if __name__ == '__main__':
 	# start demo
 	sss.say("sound",["start"])
 	rospy.sleep(2)
-	sss.say("sound", ["Hello my name is Care-O-Bot from the HRI lab I roms at Cardiff University. If you are visiting campus during this unprecedented time, please follow these regulations."], False) 
+	sss.say("sound", ["Hello my name is Care-O-Bot from the ech are I lab I roms at Cardiff University. If you are visiting campus during this unprecedented time, please follow these regulations."], False) 
 	sss.set_mimic("mimic", "laughing")
 	sss.set_mimic("mimic", "laughing")
 	handle_arm = sss.move("arm_right","hello",False)
@@ -123,6 +123,7 @@ if __name__ == '__main__':
 	==========
 
 	"""	
+	sss.move("arm_left", "folded")
 	sss.say("sound",["Thank you for your co operation and stay safe"], False)
 
 	sss.move("torso", [[-0.3,0.2]])
