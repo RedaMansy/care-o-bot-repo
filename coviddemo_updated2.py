@@ -25,7 +25,7 @@ if __name__ == '__main__':
 	# start demo
 	sss.say("sound",["start"])
 	rospy.sleep(2)
-	sss.say("sound", ["Hello my name is Care-O-Bot from I roms at Cardiff University. If you are visiting campus during this unprecedented time, please follow these regulations."], False) 
+	sss.say("sound", ["Hello my name is Care-O-Bot from the HRI lab I roms at Cardiff University. If you are visiting campus during this unprecedented time, please follow these regulations."], False) 
 	sss.set_mimic("mimic", "laughing")
 	sss.set_mimic("mimic", "laughing")
 	handle_arm = sss.move("arm_right","hello",False)
@@ -57,10 +57,10 @@ if __name__ == '__main__':
 	"""
 
 
-	#sss.say("sound",["Firstly, make sure to wear a face covering when inside University buildings"], False)
+	sss.say("sound",["Firstly, make sure to wear a face covering when inside University buildings"], False)
 	handle_arm = sss.move("arm_right", [[0,-1,0.9,-2.1,1,0,0]], False)
 	handle_arm = sss.move("arm_left", [[0,1,-0.9,2.1,-1,0,0]])
-	sss.say("sound",["Make sure to wear a face covering when inside University buildings"], False)
+	# sss.say("sound",["Make sure to wear a face covering when inside University buildings"], False)
 
 	sss.move("arm_right", "side", False)
 	sss.move("arm_left", "side")
@@ -82,10 +82,10 @@ if __name__ == '__main__':
 	# handle_arm = sss.move("arm_right", [[2.4, 1.4, -1.0472, 0, -1.0472, -0.6981, 1.0700]], False)
 	# handle_arm = sss.move("arm_left", [[-2.4, -1.4, 1.0472, 0, 1.0472, 0.6981, -1.0700]])
 	
+	sss.say("sound", ["You must also follow the signs around campus, including following the one way system."], False)
 	handle_arm = sss.move("arm_right", [[1.4, 1.3, -1.0472, -1.9, -1.0472, -0.6981, 1.0700]], False)
 	handle_arm = sss.move("arm_left", [[-1.4, -1.3, 1.0472, 1.9, 1.0472, 0.6981, -1.0700]])
-	sss.say("sound", ["You must also follow the signs around campus, including following the one way system."], False)
-
+	
 	handle_arm = sss.move("arm_right", [[1.4, 1.3, -1.0472, -1.5, -1.0472, -0.6981, 1.0700]], False)
 	handle_arm = sss.move("arm_left", [[-1.4, -1.3, 1.0472, 1.5, 1.0472, 0.6981, -1.0700]])
 
@@ -124,6 +124,10 @@ if __name__ == '__main__':
 
 	"""	
 	sss.say("sound",["Thank you for your co operation and stay safe"], False)
+
+	sss.move("torso", [[-0.3,0.2]])
+	sss.move("torso", "front")
+	
 	sss.set_mimic("mimic", "laughing")
 
 	
