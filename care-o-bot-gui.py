@@ -5,9 +5,11 @@ from simple_script_server import *
 sss = simple_script_server()
 
 def say_hello():
-    sss.say("sound", ["Hello, welcome to the H.R.I lab, may I help you?"], False)
+    sss.say("sound", ["Hello"])
 
-    sss.move("arm_right", ["hello1", "hello2", "hello1"])
+    sss.move("arm_right", ["hello1", "hello2", "hello1"], False)
+    sss.say("sound", ["Welcome to the H.R.I lab, may I help you?"])
+
     sss.move("arm_right", "side")
 
 def bend_over():
@@ -56,9 +58,9 @@ def goodbye():
 
 def give_key():
     sss.say("sound", ["Yes, I have the key. Here you go."], False)
-    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.1, -1.0472, -0.6981, 1.0700]])
-    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.1, -1.0472, -0.6981, 1.0700]])
-    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.1, -1.0472, -0.6981, 1.0700]])
+    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.3, -1.0472, -0.6981, 1.0700]])
+    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.3, -1.0472, -0.6981, 1.0700]])
+    sss.move("arm_right", [[1.4, 1.3, -1.0472, -2.3, -1.0472, -0.6981, 1.0700]])
     # make arm higher - change 2.1 if needed - done
     sss.move("arm_right", "side")
 
