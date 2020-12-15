@@ -8,6 +8,7 @@ def say_hello():
     
     sss.move("arm_right", ["hello1", "hello2", "hello1", "side"], False)
     sss.say("sound", ["Hello"])
+    rospy.sleep(2)
     sss.say("sound", ["Welcome to the H.R.I lab, may I help you?"])
     
     
@@ -54,9 +55,11 @@ def my_pleasure():
     sss.say("sound", ["My pleasure"])
 
 def goodbye():
-    sss.say("sound", ["Goodbye"], False)
-    sss.move("arm_right", ["hello1", "hello2", "hello1", "side"])
-
+   
+    sss.move("arm_right", ["hello1", "hello2", "hello1", "side"], False)
+    sss.say("sound", ["Goodbye"])
+    rospy.sleep(2)
+    sss.say("sound", ["hope to see you soon"])
 
 def give_key():
     sss.say("sound", ["Here you go."], False)
