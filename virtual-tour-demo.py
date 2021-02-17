@@ -11,10 +11,11 @@ if __name__ == "__main__":
     sss.move("gripper_left","close")
     sss.move("gripper_right","close")
     sss.move("sensorring","front")
-
     sss.move("torso","front")
-    sss.move("arm_right", "hello", False)
-    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab's virtual tour. My name is care.o.bot"]) 
+
+    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab's virtual tour. My name is care.o.bot"], False)
+    handle_arm = sss.move("arm_right", "hello")
+     
     
 
     # something about a fun presentatino planned for the next hour
@@ -23,12 +24,12 @@ if __name__ == "__main__":
 
     sss.say("sound", ["But first"])
 
-    sss.move("arm_left", "wave_demo", False)
-    sss.move("arm_right", "wave_demo")
+    handle_arm = sss.move("arm_left", "wave_demo",  False)
+    handle_arm = sss.move("arm_right", "wave_demo")
 
     sss.say("sound", ["Now that that's out of the way, here is an overview of our lab equipment."])
 
-    
+    handle_arm.wait()
 
     # introduce careobot
     # do something cool
