@@ -13,9 +13,9 @@ if __name__ == "__main__":
     sss.move("sensorring","front")
 
     sss.move("torso","front")
-    
-    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab's virtual tour. My name is care.o.bot"]) 
     sss.move("arm_right", "hello", False)
+    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab's virtual tour. My name is care.o.bot"]) 
+    
 
     # something about a fun presentatino planned for the next hour
 
