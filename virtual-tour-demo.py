@@ -23,9 +23,10 @@ if __name__ == "__main__":
     sss.say("sound", ["Today, we will be showing you around the lab, and introducing you to the various equipment we have around."])
 
     sss.say("sound", ["But first"])
-
     handle_arm = sss.move("arm_left", "wave_demo",  False)
     handle_arm = sss.move("arm_right", "wave_demo")
+
+
 
     sss.say("sound", ["Now that that's out of the way, here is an overview of our lab equipment."])
 
