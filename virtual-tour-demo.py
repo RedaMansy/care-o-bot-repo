@@ -14,6 +14,7 @@ if __name__ == "__main__":
     sss.move("torso","front")
 
     sss.say("sound", ["Hello every one, and welcome to the Human Robot Interaction lab virtual tour. I am care o bot four"], False)
+    sss.set_mimic("mimic", "sayYes")
     handle_arm = sss.move("arm_right", ["hello1", "hello2", "side"])
     # shake torso
     
@@ -43,7 +44,7 @@ if __name__ == "__main__":
     sss.say("sound", ["Hopefully there are no professional dancers in the audience. Okay, let me pass you over to my colleagues before they shut me down."])
     sss.move("arm_right", "hello1")
     sss.move("arm_right", "side")
-    sss.set_mimic("mimic","laughing")
-    sss.set_mimic("mimic","laughing")
+    sss.set_mimic("mimic","confused")
+    sss.set_mimic("mimic","sayYes")
 
     handle_arm.wait()
