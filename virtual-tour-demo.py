@@ -13,8 +13,7 @@ if __name__ == "__main__":
     sss.move("sensorring","front")
     sss.move("torso","front")
 
-    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab s virtual tour. My name is care.o.bot"], False)
-    rospy.sleep(3)
+    sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab virtual tour. My name is care o bot"], False)
     handle_arm = sss.move("arm_right", "hello")
     
 
@@ -23,8 +22,10 @@ if __name__ == "__main__":
     sss.say("sound", ["Today, we will be showing you around the lab, and introducing you to the various equipment we have around."])
 
     sss.say("sound", ["But first"])
-    handle_arm = sss.move("arm_left", "wave_demo",  False)
-    handle_arm = sss.move("arm_right", "wave_demo")
+    # handle_arm = sss.move("arm_left", "wave_demo",  False)
+    # handle_arm = sss.move("arm_right", "wave_demo")
+    handle_arm = sss.move("arm_left", ["home","wave1", "wave2", "wave3", "wave1", "home", "side"], False)
+    handle_arm = sss.move("arm_right", ["home","wave1", "wave2", "wave3", "wave1", "home", "side"])
     
 
     sss.say("sound", ["Now that that is out of the way, here is an overview of our lab equipment."])
