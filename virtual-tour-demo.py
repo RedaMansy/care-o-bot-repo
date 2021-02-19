@@ -14,13 +14,14 @@ if __name__ == "__main__":
     sss.move("torso","front")
 
     sss.say("sound", ["Hello everyone, and welcome to the Human Robot Interaction lab virtual tour. My name is care o bot"], False)
-    handle_arm = sss.move("arm_right", "hello")
+    handle_arm = sss.move("arm_right", ["hello1", "hello2", "side"])
     
 
     # something about a fun presentatino planned for the next hour
 
     sss.say("sound", ["Today, we will be showing you around the lab, and introducing you to the various equipment we have around."])
-
+    sss.move("arm_left", "hello1")
+    sss.move("arm_left", "side")
     sss.say("sound", ["But first"])
     # handle_arm = sss.move("arm_left", "wave_demo",  False)
     # handle_arm = sss.move("arm_right", "wave_demo")
