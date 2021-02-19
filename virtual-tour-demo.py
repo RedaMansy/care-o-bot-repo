@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # something about a fun presentatino planned for the next hour
 
-    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into our world and what we do in our amazing lab"])
+    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into hour world and what we do in our amazing lab"])
     sss.set_mimic("mimic","laughing")
     sss.set_mimic("mimic","laughing")
     sss.set_mimic("mimic","laughing")
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     
     sss.set_mimic("mimic","laughing")
 
-    sss.say("sound", ["Hopefully there are no professional dancers in the audience. Okay, let me pass you over to my colleagues now before they shut me down."])
+    sss.say("sound", ["Hopefully there are no professional dancers in the audience. Okay, let me pass you over to my colleagues before they shut me down."])
     sss.move("arm_right", "hello1")
     sss.move("arm_right", "side")
     sss.set_mimic("mimic","laughing")
