@@ -27,10 +27,7 @@ if __name__ == "__main__":
 
     rospy.sleep(5)
 
-    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into hour world and what we do in our amazing lab"])
-    sss.set_mimic("mimic","laughing")
-    sss.set_mimic("mimic","laughing")
-    sss.set_mimic("mimic","laughing")
+    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into hour world and what we do in our amazing lab"], False)
 
     handle_arm = sss.move("arm_left", "hello1", False)
     handle_arm = sss.move("arm_right", "hello1")
