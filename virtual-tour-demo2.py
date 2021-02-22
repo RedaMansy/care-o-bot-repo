@@ -23,11 +23,15 @@ if __name__ == "__main__":
 
     sss.move("torso", [[0,0.4]])
     sss.move("torso", [[0,-0.4]])
+    sss.move("torso", "front")
 
+    handle_arm = sss.move("arm_left", "home", False)
+    handle_arm = sss.move("arm_right", "home")
+
+    
+    sss.move("torso", [[-0.2,-0.3]])
     sss.move("torso", "front")
-    sss.move("torso". [[-0.2,-0,3]])
-    sss.move("torso", "front")
-    sss.move("torso". [[-0.2, 0,3]])
+    sss.move("torso", [[-0.2, 0.3]])
     sss.move("torso", "front")
 
     sss.move("arm_right", "side", False)
