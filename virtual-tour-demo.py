@@ -27,14 +27,14 @@ if __name__ == "__main__":
 
     rospy.sleep(5)
 
-    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into hour world and what we do in our amazing lab"], False)
+    sss.say("sound", ["And today, together with my friends, we are going to give you a glimpse into our world and what we do in our amazing lab"], False)
 
     handle_arm = sss.move("arm_left", "hello1", False)
     handle_arm = sss.move("arm_right", "hello1")
     handle_arm = sss.move("arm_left", "side", False)
     handle_arm = sss.move("arm_right", "side")
 
-    sss.say("sound", ["But first, allow me to begin with an opening dance"])
+    sss.say("sound", ["But first, allow me to begin with a robotic opening dance"])
     # handle_arm = sss.move("arm_left", "wave_demo",  False)
     # handle_arm = sss.move("arm_right", "wave_demo")
     handle_arm = sss.move("arm_left", ["home","wave1", "wave2", "wave3", "wave1", "home", "side"], False)
