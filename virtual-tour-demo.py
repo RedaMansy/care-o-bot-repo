@@ -42,7 +42,11 @@ if __name__ == "__main__":
     
     sss.set_mimic("mimic","laughing")
 
-    sss.say("sound", ["Hopefully there are no professional dancers in the audience. Okay, let me pass you over to my colleagues before they shut me down."], False)
+
+    sss.say("sound", ["Hopefully there are no professional dancers in the audience."], False)
+    # add delay between audience and okay
+    handle_arm = sss.move("arm_right", ["hello1"])
+    sss.say("sound", ["Okay, let me pass you over to my colleagues before they shut me down."], False)
     handle_arm = sss.move("arm_right", ["hello1", "side"])
     sss.set_mimic("mimic","confused")
     sss.set_mimic("mimic","sayYes")
