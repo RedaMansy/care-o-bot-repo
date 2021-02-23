@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     sss.move("torso","front")
     
-    sss.say("sound", ["It is my turn again, hah hah. I was standing here politely the whole time so it is time for me to stretch my limbs"])
+    sss.say("sound", ["It is my turn again, hah hah. I was standing here politely the whole time. So it is time for me to stretch my limbs"])
     sss.set_mimic("mimic", "laughing")
     sss.say("sound", ["Oh, I mean arms"])
     # stretching actions here
