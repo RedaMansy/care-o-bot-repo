@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # sss.move("arm_left", [[0, 0, 0, 1.5, 0, 0, 0]])
     # sss.move("arm_right", [[0, 0, 0, -1.5, 0, 0, 0]])
     sss.move("torso", [[-0.2,-0.3], "home"])
-    sss.move("torso", [[-0.2, 0.3], "home"])
+    sss.move("torso", [[-0.2, 0.5], "home"])
 
     sss.say("sound", ["A few more of those and I am on my way to a six pack"])
     sss.set_mimic("mimic", "laughing")
@@ -56,6 +56,9 @@ if __name__ == "__main__":
     sss.say("sound", ["We are really looking forward to meeting you and collaborating with you in the near future"]) 
     # move front arm to hello1, check if possible
     # handle_arm = sss.move("arm_left", ["side","hello1", "side"])
+    handle_arm = sss.move("arm_right", "side", False)
+    handle_arm = sss.move("arm_left", "side")
+
     sss.say("sound", ["We are at the end of the tour, so let us celebrate. Help yourself to a drink, while I enjoy a warm glass of electrons. Yum yum. Goodbye"])
     sss.set_mimic("mimic", "laughing")
 
