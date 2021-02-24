@@ -34,19 +34,19 @@ if __name__ == "__main__":
     # sss.move("torso", [[-0.2, 0.3]])
     # sss.move("torso", "front")
 
-    sss.move("arm_right", "side", False)
-    sss.move("arm_left", "side")
+    handle_arm = sss.move("arm_right", "side", False)
+    handle_arm = sss.move("arm_left", "side")
 
     # sss.move("arm_left", [[0, 0, 0, 1.5, 0, 0, 0]])
     # sss.move("arm_right", [[0, 0, 0, -1.5, 0, 0, 0]])
-    # sss.move("torso". [[-0.2,-0,3]])
-    # sss.move("torso". [[-0.2, 0,3]])
+    sss.move("torso", [[-0.2,-0.3], "home"])
+    sss.move("torso", [[-0.2, 0.3], "home"])
 
     sss.say("sound", ["A few more of those and I am on my way to a six pack"])
     sss.set_mimic("mimic", "laughing")
 
-    sss.move("arm_right", "folded", False)
-    sss.move("arm_left", "folded")
+    handle_arm =  sss.move("arm_right", "folded", False)
+    handle_arm = sss.move("arm_left", "folded")
 
 
     sss.say("sound", ["Well, thank you for joining us today. We hope that you enjoyed the tour as much as we enjoyed hosting it"], False)
