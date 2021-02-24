@@ -21,12 +21,17 @@ if __name__ == "__main__":
     handle_arm = sss.move("arm_left", "home", False)
     handle_arm = sss.move("arm_right", "home")
 
+    sss.set_mimic("mimic", "confused")
+    sss.set_mimic("mimic", "confused")
+
     sss.move("torso", [[0,0.4]])
     sss.move("torso", [[0,-0.4]])
     sss.move("torso", "front")
 
     handle_arm = sss.move("arm_left", "home", False)
     handle_arm = sss.move("arm_right", "home")
+
+
 
     
     # sss.move("torso", [[-0.2,-0.3]])
@@ -37,13 +42,20 @@ if __name__ == "__main__":
     handle_arm = sss.move("arm_right", "side", False)
     handle_arm = sss.move("arm_left", "side")
 
+    sss.set_mimic("mimic", "confused")
+    sss.set_mimic("mimic", "confused")
+    sss.set_mimic("mimic", "confused")
+
     # sss.move("arm_left", [[0, 0, 0, 1.5, 0, 0, 0]])
     # sss.move("arm_right", [[0, 0, 0, -1.5, 0, 0, 0]])
     sss.move("torso", [[-0.2,-0.3], "home"])
     sss.move("torso", [[-0.2, 0.5], "home"])
+    sss.move("torso", [[-0.2,-0.3], "home"])
 
     sss.say("sound", ["A few more of those and I am on my way to a six pack"])
     sss.set_mimic("mimic", "laughing")
+    sss.set_mimic("mimic", "laughing")
+
 
     handle_arm =  sss.move("arm_right", "folded", False)
     handle_arm = sss.move("arm_left", "folded")
@@ -60,6 +72,8 @@ if __name__ == "__main__":
     handle_arm = sss.move("arm_left", "side")
 
     sss.say("sound", ["We are at the end of the tour, so let us celebrate. Help yourself to a drink, while I enjoy a warm glass of electrons. Yum yum. Goodbye"])
+    sss.set_mimic("mimic", "laughing")
+    sss.set_mimic("mimic", "laughing")
     sss.set_mimic("mimic", "laughing")
 
     # and up to wave
