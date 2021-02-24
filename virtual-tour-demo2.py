@@ -53,7 +53,7 @@ if __name__ == "__main__":
     sss.move("torso", [[-0.3,0.2]])
 
     sss.move("torso", "home")
-    sss.say("sound", ["We are really looking forward to meeting you and collaborating with you in the near future"]) 
+    sss.say("sound", ["We are really looking forward to meeting you and collaborating with you in the near future"], False) 
     # move front arm to hello1, check if possible
     # handle_arm = sss.move("arm_left", ["side","hello1", "side"])
     handle_arm = sss.move("arm_right", "side", False)
