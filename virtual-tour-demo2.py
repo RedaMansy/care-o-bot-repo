@@ -20,7 +20,7 @@ if __name__ == "__main__":
     sss.set_mimic("mimic", "laughing")
     sss.say("sound", ["Oh, I mean arms"])
 
-    rospy.sleep(7)
+    rospy.sleep(2)
     # stretching actions here
     handle_arm = sss.move("arm_left", "home", False)
     handle_arm = sss.move("arm_right", "home")
