@@ -31,4 +31,4 @@ if __name__ == '__main__':
 	# sss.move("sensorring","front"):
 	sss.set_light("light_torso","cyan",False)
 
-# comment
+# comment this is a comment
